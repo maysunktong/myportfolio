@@ -10,9 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin&family=Caveat&family=Nunito&family=Open+Sans&family=Patrick+Hand&family=Poppins&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <link rel="icon" type="image/svg" href="./img/logo.svg" />
+    <title>{may.portfolio}</title>
   </head>
   <body>
+    <!-- NAVIGATION BAR -->
     <nav>
       <div class="nav-logo">
         <div><img class="nav-logo-pic" src="./img/logo.svg" alt="" /></div>
@@ -20,12 +22,114 @@
       </div>
       <div class="nav-menu">
         <ul class="nav-menu-list">
-          <li>Get to know</li>
-          <li>Projects</li>
-          <li>Enthusiasm</li>
-          <li>searchbar</li>
+          <li class="nav-list1"><a href="">Get to know</a></li>
+          <li class="nav-list2"><a href="">Projects</a></li>
+          <li class="nav-list3"><a href="">Enthusiasm</a></li>
+          <li class="nav-search">searchbar</li>
         </ul>
       </div>
     </nav>
+
+    <!-- MAIN BANNER -->
+    <div class="main-container">
+      <div>
+        <img
+          class="main-container-banner"
+          src="./img/Comment-review.png"
+          alt=""
+        />
+      </div>
+      <div class="main-container-content">welcome to my portfolio page</div>
+    </div>
+    <!-- ABOUT -->
+    <div class="about">lorem1000</div>
+    <!-- PROJECTS -->
+    <div id="slideshow">
+      <section class="carousel" aria-label="Gallery">
+        <ol class="carousel__viewport">
+          <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper">
+              <a href="#carousel__slide4" class="carousel__prev"
+                >Go to last slide</a
+              >
+              <a href="#carousel__slide2" class="carousel__next"
+                >Go to next slide</a
+              >
+            </div>
+          </li>
+          <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide1" class="carousel__prev"
+              >Go to previous slide</a
+            >
+            <a href="#carousel__slide3" class="carousel__next"
+              >Go to next slide</a
+            >
+          </li>
+          <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide2" class="carousel__prev"
+              >Go to previous slide</a
+            >
+            <a href="#carousel__slide4" class="carousel__next"
+              >Go to next slide</a
+            >
+          </li>
+          <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide3" class="carousel__prev"
+              >Go to previous slide</a
+            >
+            <a href="#carousel__slide1" class="carousel__next"
+              >Go to first slide</a
+            >
+          </li>
+        </ol>
+        <aside class="carousel__navigation">
+          <ol class="carousel__navigation-list">
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide1" class="carousel__navigation-button"
+                >Go to slide 1</a
+              >
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide2" class="carousel__navigation-button"
+                >Go to slide 2</a
+              >
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide3" class="carousel__navigation-button"
+                >Go to slide 3</a
+              >
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide4" class="carousel__navigation-button"
+                >Go to slide 4</a
+              >
+            </li>
+          </ol>
+        </aside>
+      </section>
+    </div>
+    <!-- CHAT BUTTON -->
+    <button class="open-button" onclick="openForm()">
+      <img class="open-button-btn" src="./img/chat.svg" alt="" />
+    </button>
+
+    <div class="chat-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Chat</h1>
+
+        <label for="msg"><b>Message</b></label>
+        <textarea placeholder="Type message.." name="msg" required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">
+          Close
+        </button>
+      </form>
+    </div>
+
+    <script src="app.js"></script>
   </body>
 </html>
