@@ -11,7 +11,7 @@ html {
 body {
   width: 100%;
   height: 100vh;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* -----NAVIGATION BAR------ */
@@ -23,10 +23,8 @@ nav {
   top: 0;
   position: fixed;
   padding: 0px 100px;
-  background: white;
+  background-color: white;
   height: 10vh;
-  overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .nav-logo {
@@ -61,13 +59,12 @@ nav {
 }
 
 .nav-logo-name {
-  background: linear-gradient(to right, #06d6a0, #000000 50%);
+  background: linear-gradient(to right, black, #7400b8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 4rem;
-  font-weight: 700;
   font-family: "Caveat", sans-serif;
   width: 50%;
+  font-size: 5rem;
 }
 
 .nav-list1 {
@@ -76,14 +73,26 @@ nav {
   -webkit-text-fill-color: transparent;
 }
 
+.nav-list1,
+.nav-list2,
+.nav-list3 {
+  transition: transform 250ms;
+}
+
+.nav-list1:hover,
+.nav-list2:hover,
+.nav-list3:hover {
+  transform: translateY(-10px);
+}
+
 .nav-list2 {
-  background: linear-gradient(to right, #06d6a0, #7400b8);
+  background: black;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .nav-list3 {
-  background: linear-gradient(to right, #ef233c, #ffbe0b, #b5e48c, #48bfe3);
+  background: black;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -91,25 +100,67 @@ nav {
 /* -----MAIN BANNER----- */
 .main-container {
   width: 100%;
+  margin-top: 10vh;
   height: 90vh;
   display: flex;
-  justify-content: right;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-}
-
-.main-container-banner {
-  width: 500px;
+  gap: 5rem;
 }
 
 .main-container-content {
-  text-transform: uppercase;
-  font-size: 30px;
-  align-content: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
   color: black;
-  background: linear-gradient(to right, #ef233c, #ffbe0b, #b5e48c, #48bfe3);
+  margin-top: -20vh;
+}
+
+.main-container-content h1 {
+  font-size: 10rem;
+  background: linear-gradient(to right, #f72585 30%, #7400b8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: 400ms ease-in-out;
 }
+
+.main-container-content h1:hover {
+  transform: scale(1.02);
+}
+
+.main-container-content p {
+  margin: 0vh 20vh 0 20vh;
+  color: grey;
+}
+
+.main-container-pic {
+  width: 750px;
+}
+
+.main-btn {
+  margin-top: 3rem;
+  width: 100px;
+  height: auto;
+  padding: 10px;
+  border-radius: 60px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  color: grey;
+  border: solid 1px rgba(0, 0, 0, 0.4);
+  box-shadow: xxxx;
+  transition: transform 400ms;
+}
+
+.main-btn:hover {
+  transform: translateY(2px);
+  border: solid 1px blue;
+  color: blue;
+}
+
 /* ABOUT */
 .about {
   width: 100%;
@@ -358,15 +409,14 @@ li {
   position: fixed;
   bottom: 23px;
   right: 28px;
-  width: 150px;
+  width: 120px;
   background-color: transparent;
-  opacity: 0.8;
+  transition: 300ms ease-in-out;
 }
 
 .open-button:focus {
   outline: none;
 }
-
 /* The popup chat - hidden by default */
 .chat-popup {
   display: none;
@@ -421,5 +471,6 @@ li {
 /* Add some hover effects to buttons */
 .form-container .btn:hover,
 .open-button:hover {
-  opacity: 1;
+  transform: scale(1.05);
+  opacity: 0.8;
 }
