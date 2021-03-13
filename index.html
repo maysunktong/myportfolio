@@ -10,11 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin&family=Caveat&family=Nunito&family=Open+Sans&family=Patrick+Hand&family=Poppins&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kalam&family=Righteous&display=swap"
-      rel="stylesheet"
-    />
     <link rel="icon" type="image/svg" href="./img/logo.svg" />
     <title>{may.portfolio}</title>
   </head>
@@ -22,22 +17,23 @@
     <!-- NAVIGATION BAR -->
     <nav>
       <div class="nav-logo">
-        <div><img class="nav-logo-pic" src="./img/logo.svg" alt="" /></div>
+        <div><a href="#home"><img class="nav-logo-pic" src="./img/logo.svg" alt="" /></a></div>
         <div class="nav-logo-name">may.</div>
       </div>
       <div class="nav-menu">
         <ul class="nav-menu-list">
-          <li class="nav-list1"><a href="">Projects</a></li>
-          <li class="nav-list2"><a href="">Get to Know</a></li>
-          <li class="nav-list3"><a href="">What's Next</a></li>
+          <li class="nav-list1"><a href="#projects">Projects</a></li>
+          <li class="nav-list2"><a href="#about">Get to Know</a></li>
+          <li class="nav-list3"><a href="#next">What's Next</a></li>
           <li class="nav-search">searchbar</li>
         </ul>
       </div>
     </nav>
 
     <!-- MAIN BANNER -->
-    <div class="main-container">
-      <div>
+    <section class="main-container">
+      <span class="nav-span" id="home"></span>
+      <div class="main-container-pic-container">
         <img class="main-container-pic" src="./img/Laptop-reply (2).svg" />
       </div>
       <div class="main-container-content">
@@ -49,10 +45,19 @@
         </p>
         <a class="main-btn" href="#">&#8729 explore</a>
       </div>
-    </div>
-    <!-- ABOUT --> 
-    <div class="about">lorem1000</div>
-    <!-- PROJECTS -->
+    </section>
+    <!-- PROJECTS --> 
+    <section class="projects-section">
+      <span class="nav-span" id="projects"></span>
+      <img src="./img/iphonemck.png" alt="">
+    </section>
+
+    <!-- ABOUT ME -->
+    <section class="about-section">
+      
+    </section>
+
+    <!-- SLIDER -->
     <div id="slideshow">
       <section class="carousel" aria-label="Gallery">
         <ol class="carousel__viewport">
