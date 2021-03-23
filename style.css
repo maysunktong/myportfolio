@@ -29,7 +29,6 @@ body {
   position: absolute;
   top: -10vh;
 }
-
 /* -----NAVIGATION BAR------ */
 nav {
   width: 100%;
@@ -53,7 +52,7 @@ nav {
 
 .nav-logo-pic {
   width: 90px;
-  padding: 5px;
+  padding: 10px;
   height: 90px;
 }
 
@@ -64,7 +63,7 @@ nav {
   text-transform: lowercase;
   align-items: center;
   justify-content: space-between;
-  gap: 0 1rem;
+  gap: 0 2rem;
 }
 
 .nav-menu-list a {
@@ -288,7 +287,6 @@ li {
 
 /* Add styles to the form container */
 .form-container {
-  max-width: 300px;
   padding: 10px;
   background-color: white;
 }
